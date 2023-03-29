@@ -3,3 +3,5 @@ kubectl run grpc-client --image=fullstorydev/grpcurl:latest --restart=Never --co
 kubectl run grpc-client --image=fullstorydev/grpcurl:latest --restart=Never --command -- bash -c 'apk add --no-cache protobuf && sleep infinity'
 
 
+kubectl run grpc-client --image=fullstorydev/grpcurl:latest --restart=Never --command -- sh -c 'apk add --no-cache protobuf && sh'
+
