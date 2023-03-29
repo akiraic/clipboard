@@ -18,3 +18,13 @@ spec:
 
     tty: true
 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: grpc-client
+spec:
+  containers:
+  - name: grpc-client
+    image: fullstorydev/grpcurl:latest
+    command: ["/bin/sh", "-c"]
+    args: ["apk add --no-cache protobuf && tail -f /dev/null"]
