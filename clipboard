@@ -1,0 +1,2 @@
+mongosh "mongodb://<username>:<password>@<cluster-endpoint>:<port>/<database>?ssl=true&replicaSet=<replica-set>&authSource=admin" --tlsCAFile /path/to/ca.pem
+
